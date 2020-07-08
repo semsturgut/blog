@@ -1,4 +1,4 @@
-import '../custom_navigation_drawer.dart';
+import '../model/custom_navigation_drawer.dart';
 import 'package:flutter/material.dart';
 
 class CollapsingListTile extends StatefulWidget {
@@ -43,8 +43,8 @@ class _CollapsingListTileState extends State<CollapsingListTile> {
               : Colors.transparent,
         ),
         width: widthAnimation.value,
-        margin: EdgeInsets.symmetric(horizontal: 8.0),
-        padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0),
+        margin: EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 0),
+        padding: EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 8.0),
         child: Row(
           children: <Widget>[
             Icon(
